@@ -1,25 +1,20 @@
 <script lang="ts">
-  //js imports
-  import { Link, Router } from "svelte-navigator";
-  //stores
-  import { Routes } from '../stores/routes';
+//js imports
+import { Link, Router } from 'svelte-navigator'
+//stores
+import { Routes } from '../stores/routes'
 
-  //route imports
-
-
-  
+//route imports
 </script>
 
-<template >
-  <div class='bg-blue-300'>
-    <Router>
-      {#each Routes as route}
-        <Link to={route.routeUrl}>
-          {route.routeName}
-        </Link>
-      {/each}
-
-    </Router>
-  </div>
-
+<template>
+	<div class="bg-blue-300">
+		<Router>
+			{#each Routes as route}
+				<Link to="{route.routeUrl}">
+					{route.routeName}
+				</Link>
+			{/each}
+		</Router>
+	</div>
 </template>

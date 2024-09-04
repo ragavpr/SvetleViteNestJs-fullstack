@@ -1,12 +1,12 @@
-import type { routeHooks } from "../interfaces"
+import type { routeHooks } from '../interfaces'
 
 export const Routes: routeHooks[] = [
-  {
-    routeName: "Home",
-    routeUrl: "/",
-  },
-  {
-    routeName: "Greeting Page",
-    routeUrl: "greeting",
-  }
+	{
+		routeName: 'Home',
+		routeUrl: '/',
+	},
+	{
+		routeName: 'Greeting Page',
+		routeUrl: 'greeting',
+	},
 ]
