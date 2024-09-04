@@ -9,5 +9,4 @@ export class Greeting {
   msg: string;
 }
 
-
 //use the entity to populate service and controller types (test only)

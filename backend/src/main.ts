@@ -23,14 +23,14 @@ async function bootstrap() {
   );
 
   //validation pipe for the app
-  app.useGlobalPipes(new ValidationPipe())
+  app.useGlobalPipes(new ValidationPipe());
   const config = new DocumentBuilder()
     .setTitle('backend NestJS REST API template')
     .setDescription('simplete NestJs template')
     .setVersion('1.0')
-    .build()
-  const document = SwaggerModule.createDocument(app,config)
-  SwaggerModule.setup('/swagger',app,document)
+    .build();
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('/swagger', app, document);
   await app.listen(
     process.env.SERVER_PORT ?? 3001,
     '0.0.0.0',

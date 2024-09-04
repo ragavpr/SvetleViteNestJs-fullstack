@@ -5,8 +5,8 @@ import { greetingProvider } from './rest-api.providers';
 import { RestApiService } from './rest-api.service';
 
 @Module({
-  imports:[DatabaseModule],
+  imports: [DatabaseModule],
   controllers: [RestApiController],
-  providers: [RestApiService, ...greetingProvider]
+  providers: [RestApiService, ...greetingProvider],
 })
 export class RestApiModule {}

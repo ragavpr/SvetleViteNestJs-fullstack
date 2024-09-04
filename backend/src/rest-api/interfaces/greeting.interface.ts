@@ -1,6 +1,6 @@
-import { Document } from "mongoose";
+import { Document } from 'mongoose';
 
 export interface GreetingInterface extends Document {
-  id:number;
-  msg:string;
+  id: number;
+  msg: string;
 }
