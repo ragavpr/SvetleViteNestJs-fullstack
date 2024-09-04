@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { GreetingInterface } from 'src/interfaces';
+import type { GreetingInterface } from '../interfaces';
 
 export async function getCall(url:string): Promise<any> {
   try {

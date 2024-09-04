@@ -1,4 +1,4 @@
-import { routeHooks } from "../interfaces"
+import type { routeHooks } from "../interfaces"
 
 export const Routes: routeHooks[] = [
   {

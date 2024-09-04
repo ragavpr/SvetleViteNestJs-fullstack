@@ -1,5 +1,5 @@
 <script lang='ts'>
-  import type { GreetingInterface } from "src/interfaces";
+  import type { GreetingInterface } from "../interfaces";
 
   //api
   import { deleteGreeting, getCall, patchGreeting, postNewGreeting } from "../api/greetingAxios";

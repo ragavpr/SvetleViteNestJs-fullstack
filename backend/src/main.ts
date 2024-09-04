@@ -6,12 +6,13 @@ import {
 } from '@nestjs/platform-fastify'; //first package to install
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import fastify from 'fastify';
+import fastifyCors from '@fastify/cors';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const server = fastify({ logger: true, ignoreTrailingSlash: true });
 
-  server.register(require('fastify-cors'), {
+  server.register(fastifyCors, {
     origin: true,
     methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
   });

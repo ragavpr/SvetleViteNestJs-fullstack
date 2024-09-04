@@ -65,7 +65,7 @@ export class RestApiService {
     const result = await this.greetingModel
       .deleteOne({ _id: greetingId })
       .exec();
-    if (result.n === 0) {
+    if ((result as any).n === 0) {
       throw new NotFoundException('greeting does not exist');
     }
     console.log(result);
